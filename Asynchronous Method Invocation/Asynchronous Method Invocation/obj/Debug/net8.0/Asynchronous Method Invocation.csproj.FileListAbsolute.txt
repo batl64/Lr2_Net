@@ -1,0 +1,14 @@
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\bin\Debug\net8.0\Asynchronous Method Invocation.exe
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\bin\Debug\net8.0\Asynchronous Method Invocation.deps.json
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\bin\Debug\net8.0\Asynchronous Method Invocation.runtimeconfig.json
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\bin\Debug\net8.0\Asynchronous Method Invocation.dll
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\bin\Debug\net8.0\Asynchronous Method Invocation.pdb
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.AssemblyInfoInputs.cache
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.AssemblyInfo.cs
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.csproj.CoreCompileInputs.cache
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.dll
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\refint\Asynchronous Method Invocation.dll
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.pdb
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\Asynchronous Method Invocation.genruntimeconfig.cache
+C:\Users\maksi\source\repos\Asynchronous Method Invocation\Asynchronous Method Invocation\obj\Debug\net8.0\ref\Asynchronous Method Invocation.dll
