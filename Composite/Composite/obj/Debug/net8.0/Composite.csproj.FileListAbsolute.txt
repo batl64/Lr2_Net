@@ -1,0 +1,14 @@
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.AssemblyInfoInputs.cache
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.AssemblyInfo.cs
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.csproj.CoreCompileInputs.cache
+C:\Users\maksi\source\repos\Composite\Composite\bin\Debug\net8.0\Composite.exe
+C:\Users\maksi\source\repos\Composite\Composite\bin\Debug\net8.0\Composite.deps.json
+C:\Users\maksi\source\repos\Composite\Composite\bin\Debug\net8.0\Composite.runtimeconfig.json
+C:\Users\maksi\source\repos\Composite\Composite\bin\Debug\net8.0\Composite.dll
+C:\Users\maksi\source\repos\Composite\Composite\bin\Debug\net8.0\Composite.pdb
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.dll
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\refint\Composite.dll
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.pdb
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\Composite.genruntimeconfig.cache
+C:\Users\maksi\source\repos\Composite\Composite\obj\Debug\net8.0\ref\Composite.dll
