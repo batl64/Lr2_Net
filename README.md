@@ -9,9 +9,38 @@
 2. **ConcretePrototype (Конкретний прототип)**: це клас, який реалізує клонування, щоб створювати нові об'єкти.
 3. **Client (Клієнт)**: клас або модуль, який використовує прототип для створення нових об'єктів.
 ### Діаграма класів 
-![image](https://github.com/batl64/Lr2_Net/blob/main/1.png?raw=true)
+```mermaid
+classDiagram
+    class Prototype {
+        <<abstract>>
+        +clone() Prototype
+    }
+
+    class ConcretePrototype1 {
+        +clone() Prototype
+    }
+    class ConcretePrototype2 {
+        +clone() Prototype
+    }
+
+    class Client {
+        +createPrototype() void
+    }
+
+    Prototype <|-- ConcretePrototype1
+    Prototype <|-- ConcretePrototype2
+    Client ..> Prototype : uses
+
+```
 ### Діаграма взаємодії  
-![image](https://github.com/batl64/Lr2_Net/blob/main/1.1.png?raw=true)
+```mermaid
+sequenceDiagram
+    Client->>ConcretePrototype: createPrototype()
+    ConcretePrototype-->>Client: new ConcretePrototype
+    Client->>ConcretePrototype: clone()
+    ConcretePrototype-->>Client: cloned object
+
+```
 
 ### Переваги
 - **Зменшення витрат на створення об'єктів**: використання клонування може бути більш ефективним за створення нових об'єктів з нуля.
@@ -38,9 +67,47 @@
 4. **Client (Клієнт)**: клас або модуль, який використовує компоненти для створення деревовидних структур та виконання операцій з ними.
 
 ### Діаграма класів 
-![image](https://github.com/batl64/Lr2_Net/blob/main/2.png?raw=true)
+```mermaid
+classDiagram
+    class Component {
+        <<abstract>>
+        +operation() void
+    }
+
+    class Leaf {
+        +operation() void
+    }
+
+    class Composite {
+        +add(Component) void
+        +remove(Component) void
+        +getChild(int) Component
+        +operation() void
+    }
+
+    class Client {
+        +useComponent(Component) void
+    }
+
+    Component <|-- Leaf
+    Component <|-- Composite
+    Client ..> Component : uses
+
+```
 ### Діаграма взаємодії  
-![image](https://github.com/batl64/Lr2_Net/blob/main/2.1.png?raw=true)
+```mermaid
+sequenceDiagram
+    Client->>Composite: create composite structure
+    Composite->>Leaf: add leaf component
+    Composite->>Composite: add composite component
+    Composite->>Leaf: add leaf component
+
+    Client->>Composite: useComponent()
+    Composite->>Leaf: operation()
+    Composite->>Composite: operation()
+    Composite->>Leaf: operation()
+
+```
 
 
 ### Переваги
@@ -67,9 +134,50 @@
 3. **ConcreteState (Конкретний стан)**: це конкретна реалізація стану, яка визначає поведінку об'єкта в цьому стані.
 
 ### Діаграма класів 
-![image](https://github.com/batl64/Lr2_Net/blob/main/3.png?raw=true)
+```mermaid
+classDiagram
+    class Context {
+        -state: State
+        +setState(State) void
+        +request() void
+    }
+
+    class State {
+        <<abstract>>
+        +handle(Context) void
+    }
+
+    class ConcreteStateA {
+        +handle(Context) void
+    }
+
+    class ConcreteStateB {
+        +handle(Context) void
+    }
+
+    Context o-- State
+    State <|-- ConcreteStateA
+    State <|-- ConcreteStateB
+
+```
 ### Діаграма взаємодії  
-!![image](https://github.com/batl64/Lr2_Net/blob/main/3.1.png?raw=true)
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Context
+    participant State
+    participant ConcreteStateA
+    participant ConcreteStateB
+
+    Client->>Context: create context
+    Context->>ConcreteStateA: set initial state
+    Context->>State: request()
+    ConcreteStateA->>Context: handle()
+    Context->>ConcreteStateB: change state to ConcreteStateB
+    Context->>State: request()
+    ConcreteStateB->>Context: handle()
+
+```
 
 ### Переваги
 - **Легкість додавання нових станів**: можливість легко додавати нові стани без зміни коду контексту або інших станів.
@@ -94,9 +202,38 @@
 4. **Callback (Зворотний виклик)**: механізм, за допомогою якого викликається певна функція або метод після завершення асинхронного виклику.
 
 ### Діаграма класів 
-![image](https://github.com/batl64/Lr2_Net/blob/main/4.png?raw=true)
+```mermaid
+classDiagram
+    class Client {
+        +callAsyncMethod() void
+    }
+
+    class Invoker {
+        +invokeAsync(Receiver, Callback) void
+    }
+
+    class Receiver {
+        +doWork() void
+    }
+
+    class Callback {
+        +onComplete() void
+    }
+
+    Client --> Invoker
+    Invoker --> Receiver
+    Invoker --> Callback
+
+```
 ### Діаграма взаємодії  
-![image](https://github.com/batl64/Lr2_Net/blob/main/1.4.png?raw=true)
+```mermaid
+sequenceDiagram
+    Client->>Invoker: callAsyncMethod()
+    Invoker->>Receiver: invokeAsync()
+    Receiver->>Invoker: doWork()
+    Invoker->>Callback: onComplete()
+
+```
 ### Переваги
 - **Підвищення продуктивності**: дозволяє виконувати інші завдання, поки триває асинхронний виклик.
 - **Реактивність**: дозволяє реагувати на події або зміни стану без блокування головного потоку виконання.
